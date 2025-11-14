@@ -1,0 +1,115 @@
+        * {
+      box-sizing: border-box;
+    }
+body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom right, rgba(116, 207, 104, 0.329), whitesmoke, rgba(116, 207, 104, 0.281), white, rgba(147, 197, 118, 0.767));
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    z-index: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+table {
+    top: -20rem;
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    gap: 0px;
+    margin: 0px;
+}
+
+.ani{
+    animation: ligne 2s  infinite;
+    border: 2px solid rgba(116, 207, 104, 0.377);
+    opacity: 0;
+    margin: 0px;  
+}
+
+td,tr{
+    border: 2px solid ;
+   opacity: 0;
+    margin: 0px;
+    border-collapse: collapse;
+}
+td:hover{
+    background-color: rgb(116, 207, 104);
+    transform: scale(1);
+}
+@keyframes ligne {
+    0% {
+        border: 2px solid white;
+    }
+    20% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        border: 2px solid white;
+    }
+}
+
+.en1{
+    animation-delay: 0s;
+    
+}
+
+.en2 {
+    animation-delay: 3s;
+}
+
+.en3 {
+    animation-delay: 6s;
+}
+
+.en4 {
+    animation-delay: 9s;
+}
+
+form{
+    top: 10.5rem;
+    left: 30rem;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(116, 207, 104, 0.199);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 50%;
+    width: 20%;
+}
+.decor1{
+    top: -53rem;
+    left: 27rem;
+    z-index: 3;
+    position: relative;
+    border: 2px solid ;
+    width: 7%;
+    height: 15%;
+    border-radius: 10px;
+    background-color: rgba(116, 207, 104, 0.377);
+}
+.decor2{
+    top: -39rem;
+    left: 44rem;
+    z-index: 3;
+    position: relative;
+    border: 2px solid ;
+    width: 7%;
+    height: 15%;
+    border-radius: 10px;
+    background-color: rgba(116, 207, 104, 0.377);
+}
