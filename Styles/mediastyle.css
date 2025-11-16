@@ -153,6 +153,9 @@ display: none;
     background-position: center;
     border-radius: 0;
 }
+.h4{
+  color: black;
+}
 @keyframes changeimgs {
 0%{
 background-image: url(../objects/leTout.jpg);
@@ -235,6 +238,14 @@ align-items: center;
         border-radius: 5px;
           backface-visibility: visible;
 }
+/*---------------------- les object ---------------------*/
+.phh{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
+}
+
 
 
 .hero{
