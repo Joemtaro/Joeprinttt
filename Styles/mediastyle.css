@@ -377,5 +377,10 @@ h2{
   min-height:50%;
 
 }
-
+.le_centre{
+  display: none;
+}
+.hero{
+  display: none;
+}
 }
