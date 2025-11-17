@@ -1427,7 +1427,7 @@ color: white;
           min-height: 20%;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
             table, thead, tbody, th, td, tr {
                 display: block;
             }
@@ -1573,3 +1573,9 @@ color: white;
                 gap: 30px;
             }
         }
+.hhead1{
+  display: none;
+}
+.hhead2{
+  display: none;
+}

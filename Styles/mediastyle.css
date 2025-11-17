@@ -245,9 +245,99 @@ align-items: center;
   object-fit: cover;
   background-size: cover;
 }
+/*---------------------- contacte nous ---------------------*/
+.gg{
+  display: block;
+  color: orange;
+}
+/*==============================le header ========================*/
+.hhead1{
+  display: block;
+  min-height: 20%;
+  background-color: #360f0f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.nav1{
+  display: flex;
+  height: 50%;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
 
+}
+.nav2{
+  display: flex;
+  height: 50%;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
 
+}
+.link3{
+  display: flex;
+justify-content:center ;
+align-items: center;
+  border-radius: 10px;
+background-color: #f39d1269;
+  height: 40px;
+  width: 100px;
+  color: black;
+    text-decoration: none;
+      font-weight: 600;
+      transition: 0.4s ease;
+}
+.link2{
+  display: flex;
+justify-content:center ;
+align-items: center;
+  border-radius: 10px;
+  background-color: #f39d1269;
+  height: 40px;
+  width: 120px;
+  color: black;
+  text-decoration: none;
+  font-weight: 600; 
+  transition: 0.4s ease;
+}
+.link2:hover{
+  transform: scale(1.01);
+    box-shadow: 0 0 10px 0 black;
+   background-color: #f39d12;
+   color: white;
+}
+.link3:hover{
+  transform: scale(1.01);
+  box-shadow: 0 0 10px 0 black;
+  color: white;
+   background-color: #f39d12;
+}
 
+.hhead2{
+  display: block;
+  min-height: 20%;
+  background-color: #360f0f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 90%;
+}
+img{
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  background-position: cover;
+  background-repeat: no-repeat
+}
+table{
+};
 .hero{
   display: none;
 }
