@@ -458,10 +458,11 @@
     border-radius: 12px;
   }
 
+
   .lesObjecte22 {
     display: flex;
     overflow-y: hidden;
-    overflow-x: auto;
+    overflow-x: hidden;
     min-height: 40%;
     gap: 14px;
     padding: 10px 0;
@@ -597,9 +598,13 @@
 
   h2 { display: block; }
 
+
   .surObject {
     display: flex;
     min-height: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
   }
 
   .tetepub { display: block; }
