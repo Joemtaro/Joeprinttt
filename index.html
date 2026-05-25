@@ -3,9 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Joeprint – Votre imprimerie professionnelle à Bujumbura. Impression numérique, offset, grand format et objets personnalisés." />
   <title>Joeprint – Imprimerie Professionnelle</title>
- <link rel="stylesheet" href="./Styles/Allstyle.css">
- <link rel="stylesheet" href="./Styles/mediastyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./Styles/Allstyle.css">
+  <link rel="stylesheet" href="./Styles/mediastyle.css">
 </head>
 <body>
 
@@ -67,20 +72,24 @@
     <h2>Nos valeurs</h2>
     <div class="values">
       <div class="value">
+        <div class="value-icon"><i class="fas fa-gem"></i></div>
         <h3>Qualité</h3>
         <p>Chaque impression est réalisée avec soin, en utilisant des machines modernes et des encres certifiées pour un rendu parfait.</p>
       </div>
       <div class="value">
+        <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
         <h3>Innovation</h3>
-        <p>Nous restons à la pointe des technologies d’impression et de design pour répondre à tous les besoins créatifs.</p>
+        <p>Nous restons à la pointe des technologies d'impression et de design pour répondre à tous les besoins créatifs.</p>
       </div>
       <div class="value">
+        <div class="value-icon"><i class="fas fa-handshake"></i></div>
         <h3>Engagement</h3>
         <p>Nous respectons nos délais et nos promesses, tout en garantissant un accompagnement humain et professionnel.</p>
       </div>
       <div class="value">
-        <h3>Respect de l’environnement</h3>
-        <p>Joeprint s’engage dans une démarche éco-responsable avec des matériaux recyclables et des processus à faible impact écologique.</p>
+        <div class="value-icon"><i class="fas fa-leaf"></i></div>
+        <h3>Respect de l'environnement</h3>
+        <p>Joeprint s'engage dans une démarche éco-responsable avec des matériaux recyclables et des processus à faible impact écologique.</p>
       </div>
     </div>
   </section>
@@ -243,6 +252,50 @@
   </footer>
   <!-- ======== FIN DU FOOTER ======== -->
 
+  <script>
+    // Scroll Reveal Animation
+    const revealElements = document.querySelectorAll('section, .cta, .eco, .testimonials');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }, i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    revealElements.forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'opacity 0.65s ease, transform 0.65s ease';
+      observer.observe(el);
+    });
+
+    // Value cards stagger
+    const valueCards = document.querySelectorAll('.value, .service-item, .testimonial');
+    const cardObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }, i * 100);
+          cardObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    valueCards.forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(25px)';
+      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      cardObserver.observe(el);
+    });
+  </script>
 
 </body>
 </html>
